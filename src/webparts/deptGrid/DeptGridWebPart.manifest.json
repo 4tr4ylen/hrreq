@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "dept-grid-web-part",
+  "alias": "DeptGridWebPart",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Department Requests Grid" },
+    "description": { "default": "Display HR requests for the current user's department" },
+    "officeFabricIconFontName": "ViewList",
+    "properties": {
+      "title": "Department Requests",
+      "description": "View and manage requests for your department",
+      "showFilters": true,
+      "itemsPerPage": "20"
+    }
+  }]
+} 

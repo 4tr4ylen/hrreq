@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-hr-requests",
+    "id": "hr-requests-solution-id",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "HR Team",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": ""
+    },
+    "features": [
+      {
+        "title": "HR Requests Application Feature",
+        "description": "The feature that activates elements of the HR Requests solution.",
+        "id": "hr-requests-feature",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadBasic.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-hr-requests.sppkg"
+  }
+} 

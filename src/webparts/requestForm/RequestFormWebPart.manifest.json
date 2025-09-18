@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "request-form-web-part",
+  "alias": "RequestFormWebPart",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "HR Request Form" },
+    "description": { "default": "Form for submitting HR requests with attachment support" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "title": "HR Request Form",
+      "description": "Submit your HR request with required documentation",
+      "requestTypes": "Leave Request,Equipment Request,Policy Question,Benefits Question,Other",
+      "maxFileSize": "10",
+      "showManagerField": true,
+      "requireManagerApproval": false
+    }
+  }]
+} 

@@ -1,0 +1,56 @@
+{
+  "name": "spfx-hr-requests",
+  "version": "1.0.0",
+  "description": "HR Requests tool for SharePoint Online using SPFx",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp bundle",
+    "clean": "gulp clean",
+    "test": "gulp test",
+    "serve": "gulp serve",
+    "package": "gulp bundle --ship && gulp package-solution --ship",
+    "dev": "gulp serve --nobrowser"
+  },
+  "keywords": [
+    "sharepoint",
+    "spfx",
+    "react",
+    "typescript",
+    "hr",
+    "requests"
+  ],
+  "author": "HR Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@microsoft/rush-stack-compiler-4.5": "^0.5.1",
+    "@microsoft/rush-stack-compiler-4.7": "0.1.1",
+    "@microsoft/sp-build-web": "1.17.4",
+    "@types/webpack-env": "1.18.0",
+    "@typescript-eslint/eslint-plugin": "5.59.11",
+    "@typescript-eslint/parser": "5.59.11",
+    "eslint": "8.42.0",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "gulp": "4.0.2",
+    "gulp-sequence": "1.0.0",
+    "rimraf": "5.0.1",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.110.0",
+    "@microsoft/sp-core-library": "1.17.4",
+    "@microsoft/sp-lodash-subset": "1.17.4",
+    "@microsoft/sp-office-ui-fabric-core": "1.17.4",
+    "@microsoft/sp-property-pane": "1.17.4",
+    "@microsoft/sp-webpart-base": "1.17.4",
+    "@pnp/sp": "^3.11.0",
+    "@pnp/spfx-controls-react": "^3.12.0",
+    "@pnp/spfx-property-controls": "^3.12.0",
+    "office-ui-fabric-react": "7.199.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

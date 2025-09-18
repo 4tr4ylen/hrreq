@@ -1,0 +1,2 @@
+# This is a placeholder for the .sppkg file
+# The actual package will be generated when running gulp package-solution --ship 

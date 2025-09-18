@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "request-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/requestForm/RequestFormWebPart.js",
+          "manifest": "./src/webparts/requestForm/RequestFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "dept-grid-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/deptGrid/DeptGridWebPart.js",
+          "manifest": "./src/webparts/deptGrid/DeptGridWebPart.manifest.json"
+        }
+      ]
+    },
+    "hr-admin-grid-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/hrAdminGrid/HrAdminGridWebPart.js",
+          "manifest": "./src/webparts/hrAdminGrid/HrAdminGridWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
